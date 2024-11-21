@@ -5,6 +5,13 @@ val scala3Version = "3.5.2"
 
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
+lazy val implicitsHW = project
+  .in(file("homeworks/implicits"))
+  .settings(
+    name := "homeworks-implicits",
+    scalaVersion := scala3Version,
+  )
+
 lazy val serializationHW = project
   .in(file("homeworks/serialization"))
   .settings(
